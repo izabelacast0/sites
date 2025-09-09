@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{box-sizing:border-box;}
+    body{
+      margin:0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #fffafa;
+      color: #111;
+      position: relative;
+      z-index: 0;
+    }
+    .stripe{
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      width: 60px;
+      z-index: 5;
+      background-image: repeating-linear-gradient(45deg,
+       #111 0 12px,
+      #2c2b2b 12px 24px
+        );
+    }
+    .stripe.left {left: 0;}
+    .stripe.right {right:0;}
+    .banner{
+      height: 350px;
+      background-image: url("superman1.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-color: #000;
+      margin-left: 60px;
+      margin-right: 60px;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+      position: relative;
+      z-index: 10;
+        }
+        .card{
+          background: #fff;
+          padding: 28px;
+          margin-top: -70px;
+          box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+          border-radius: 2px;
+        }
+        h1 {color: #f30800; margin: 00 0 12px; font-size: 32px;}
+        p {line-height: 1.35; text-align: justify; margin: 0; font-size: 14px;}
+        .color-bar{
+          height: 18px;
+          margin: 20px 0;
+          background: linear-gradient(to right, red, orange, yellow, green, blue);
+        }
+        .comic-img{display:block; margin: 18px auto 0; max-width: 360px;}
+        @media(max-width: 980px){
+          .stripe {display:none;}
+          .container{padding: 12px;}
+        }
+  </style>
+</head>
+<body>
+  <div class="stripe left"></div>
+  <div class="stripe right"></div>
+  <header class="banner" role="banner" aria-label="Banner"></header>
+
+  <main class="container">
+    <section class="card">
+      <h1>SuperMan</h1>
+      <p>Superman é um filme de super-herói americano do personagem Superman, da DC Comics, baseado na série de quadrinhos All-Star Superman,[5] lançado em 11 de julho de 2025. Escrito e dirigido por James Gunn e produzido por Peter Safran, o filme é estrelado por David Corenswet, Nicholas Hoult e Rachel Brosnahan,[6] produzido pela Troll Court e Safran e distribuído pela DC/Warner. O filme é o primeiro do Universo DC (DCU), marcando a fase final do Universo Estendido DC (2013–2023) e a reinicialização do novo universo DCU por Gunn e Safran. Essa nova etapa começou em 2025 com Superman, que faz parte do Capítulo 1: Deuses e Monstros.</p>
+    </section>
+    <div class="color-bar"></div>
+    <section>
+      <img src="super.jpg" alt="HQ SUPERMAN" class="comic-img">
+      <h2 style="color: #110101; margin-top: 18px;">Publicação</h2>
+      <p style="text-align: justify;">
+        A publicação de Superman no Brasil teve início em dezembro de 1938, no suplemento A Gazetinha 445 do jornal A Gazeta.[1] O personagem havia surgido meses antes, na revista Action Comics, e permanece sendo publicado no país. Desde a década de 2000, uma revista homônima é uma publicada mensalmente pela Editora Panini.
+
+A Primeira revista com o título "Superman" no Brasil foi publicada pela EBAL entre novembro de 1947 e outubro de 1983.[2]
+
+Em 1984 a Editora Abril lança a revista intitulada Super-Homem,[3] Em 2001 cria a polêmica Superman Premium, uma revista em formato americano (17 cm x 26 cm), capa cartonada, lombada quadrada ao preço de R$ 9,90, publicação que vendeu pouco por conta do preço
+      </p>
+    </section>
+  </main>
+</body>
+</html>
